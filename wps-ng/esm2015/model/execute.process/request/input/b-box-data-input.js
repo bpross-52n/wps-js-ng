@@ -1,0 +1,23 @@
+export class BBoxDataInput {
+    /**
+     * the following parameters are mandatory: identifier, crs,
+     * lowerCorner and upperCorner
+     *
+     * the rest might be set to 'undefined'!
+     *
+     * @identifier input-request identifier
+     * @crs coordinate reference system URI
+     * @dimension number of dimensions in this CRS
+     * @lowerCorner orderedSequence of double values
+     * @upperCorner orderedSequence of double values
+     */
+    constructor(identifier, crs, dimension, lowerCorner, upperCorner) {
+        this.type = 'bbox';
+        this.identifier = identifier;
+        this.crs = crs;
+        this.dimension = dimension || undefined;
+        this.lowerCorner = lowerCorner;
+        this.upperCorner = upperCorner;
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYi1ib3gtZGF0YS1pbnB1dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3dwcy1uZy9zcmMvbW9kZWwvZXhlY3V0ZS5wcm9jZXNzL3JlcXVlc3QvaW5wdXQvYi1ib3gtZGF0YS1pbnB1dC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxNQUFNLE9BQU8sYUFBYTtJQVF4Qjs7Ozs7Ozs7Ozs7T0FXRztJQUVILFlBQWEsVUFBa0IsRUFBRSxHQUFXLEVBQUUsU0FBaUIsRUFBRSxXQUFtQixFQUFFLFdBQW1CO1FBQ3ZHLElBQUksQ0FBQyxJQUFJLEdBQUcsTUFBTSxDQUFDO1FBQ25CLElBQUksQ0FBQyxVQUFVLEdBQUcsVUFBVSxDQUFDO1FBQzdCLElBQUksQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDO1FBQ2YsSUFBSSxDQUFDLFNBQVMsR0FBRyxTQUFTLElBQUksU0FBUyxDQUFDO1FBQ3hDLElBQUksQ0FBQyxXQUFXLEdBQUcsV0FBVyxDQUFDO1FBQy9CLElBQUksQ0FBQyxXQUFXLEdBQUcsV0FBVyxDQUFDO0lBQ2pDLENBQUM7Q0FDRiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RGF0YUlucHV0fSBmcm9tICcuL2RhdGEtaW5wdXQnO1xuXG5leHBvcnQgY2xhc3MgQkJveERhdGFJbnB1dCBpbXBsZW1lbnRzIERhdGFJbnB1dHtcbiAgIGlkZW50aWZpZXI6IHN0cmluZztcbiAgIHR5cGU6IHN0cmluZztcbiAgIGNyczogc3RyaW5nO1xuICAgZGltZW5zaW9uOiBzdHJpbmc7XG4gICBsb3dlckNvcm5lcjogc3RyaW5nO1xuICAgdXBwZXJDb3JuZXI6IHN0cmluZztcblxuICAvKipcbiAgICogdGhlIGZvbGxvd2luZyBwYXJhbWV0ZXJzIGFyZSBtYW5kYXRvcnk6IGlkZW50aWZpZXIsIGNycyxcbiAgICogbG93ZXJDb3JuZXIgYW5kIHVwcGVyQ29ybmVyXG4gICAqXG4gICAqIHRoZSByZXN0IG1pZ2h0IGJlIHNldCB0byAndW5kZWZpbmVkJyFcbiAgICpcbiAgICogQGlkZW50aWZpZXIgaW5wdXQtcmVxdWVzdCBpZGVudGlmaWVyXG4gICAqIEBjcnMgY29vcmRpbmF0ZSByZWZlcmVuY2Ugc3lzdGVtIFVSSVxuICAgKiBAZGltZW5zaW9uIG51bWJlciBvZiBkaW1lbnNpb25zIGluIHRoaXMgQ1JTXG4gICAqIEBsb3dlckNvcm5lciBvcmRlcmVkU2VxdWVuY2Ugb2YgZG91YmxlIHZhbHVlc1xuICAgKiBAdXBwZXJDb3JuZXIgb3JkZXJlZFNlcXVlbmNlIG9mIGRvdWJsZSB2YWx1ZXNcbiAgICovXG5cbiAgY29uc3RydWN0b3IoIGlkZW50aWZpZXI6IHN0cmluZywgY3JzOiBzdHJpbmcsIGRpbWVuc2lvbjogc3RyaW5nLCBsb3dlckNvcm5lcjogc3RyaW5nLCB1cHBlckNvcm5lcjogc3RyaW5nKSB7XG4gICAgdGhpcy50eXBlID0gJ2Jib3gnO1xuICAgIHRoaXMuaWRlbnRpZmllciA9IGlkZW50aWZpZXI7XG4gICAgdGhpcy5jcnMgPSBjcnM7XG4gICAgdGhpcy5kaW1lbnNpb24gPSBkaW1lbnNpb24gfHwgdW5kZWZpbmVkO1xuICAgIHRoaXMubG93ZXJDb3JuZXIgPSBsb3dlckNvcm5lcjtcbiAgICB0aGlzLnVwcGVyQ29ybmVyID0gdXBwZXJDb3JuZXI7XG4gIH1cbn1cbiJdfQ==

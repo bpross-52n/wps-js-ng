@@ -1,0 +1,23 @@
+{
+  "name": "wps-ng",
+  "version": "1.0.12",
+  "peerDependencies": {
+    "@angular/common": "^10.0.2",
+    "@angular/core": "^10.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "tslib": "^2.0.0",
+    "wps-js-52-north": "^2.0.51"
+  },
+  "main": "bundles/wps-ng.umd.js",
+  "module": "fesm2015/wps-ng.js",
+  "es2015": "fesm2015/wps-ng.js",
+  "esm2015": "esm2015/wps-ng.js",
+  "fesm2015": "fesm2015/wps-ng.js",
+  "typings": "wps-ng.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}
